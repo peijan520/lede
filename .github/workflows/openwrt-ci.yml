@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-32
+name: OpenWrt-64
 
 on:
   push:
@@ -108,8 +108,8 @@ jobs:
           # 编译x64固件:
           cat >> .config <<EOF
           CONFIG_TARGET_x86=y
-          CONFIG_TARGET_x86_generic=y
-          CONFIG_TARGET_x86_generic_Generic=y
+          CONFIG_TARGET_x86_64=y
+          CONFIG_TARGET_x86_64_Generic=y
           EOF
 
           # 固件压缩:
