@@ -180,9 +180,6 @@ jobs:
           CONFIG_PACKAGE_libncurses=y
           CONFIG_PACKAGE_libreadline=y
           CONFIG_PACKAGE_mysql-server=y
-          CONFIG_PACKAGE_terminfo=y
-          CONFIG_PACKAGE_uclibcxx=y
-          CONFIG_PACKAGE_zlib=y
           EOF
 
           # LuCI主题:
