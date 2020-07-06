@@ -163,6 +163,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_ddns-scripts_dnspod=y
@@ -173,7 +174,12 @@ jobs:
           CONFIG_PACKAGE_shadow-useradd=y
           CONFIG_PACKAGE_shadow-groupadd=y
           CONFIG_PACKAGE_spawn-fcgi=y
-          CONFIG_PACKAGE_mysql-server=y
+          CONFIG_PACKAGE_mariadb-server=y
+          CONFIG_PACKAGE_libmysqlclient=y
+          CONFIG_PACKAGE_ibncursesw=y
+          CONFIG_PACKAGE_uclibcxx=y
+          CONFIG_PACKAGE_libreadline=y
+          CONFIG_PACKAGE_libncurses=y
           CONFIG_PACKAGE_wget=y
           CONFIG_PACKAGE_unzip=y
           CONFIG_PACKAGE_grep=y
