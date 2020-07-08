@@ -65,7 +65,7 @@ jobs:
       - name: docker
         run: |
           cd package
-          mkdir openwrt-packages
+          # mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/YiuKi520/luci-app-dockerman.git
 
