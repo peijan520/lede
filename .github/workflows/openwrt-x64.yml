@@ -62,6 +62,13 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/fw876/helloworld.git
 
+      - name: docker
+        run: |
+          cd package
+          mkdir openwrt-packages
+          cd openwrt-packages
+          git clone https://github.com/YiuKi520/luci-app-dockerman.git
+
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
@@ -153,9 +160,12 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-wol is not set
           # CONFIG_PACKAGE_luci-app-wol is not set
+          CONFIG_PACKAGE_uhttpd is not set
+          # CONFIG_PACKAGE_uhttpd is not set
           CONFIG_PACKAGE_luci-app-hd-idle=y
-          CONFIG_PACKAGE_luci-app-docker=y
-          CONFIG_PACKAGE_luci-app-kodexplorer=y
+          # CONFIG_PACKAGE_luci-app-docker=y
+          CONFIG_PACKAGE_luci-app-dockerman=y
+          # CONFIG_PACKAGE_luci-app-kodexplorer=y
           CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_obfs=y
@@ -171,6 +181,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_nginx=y
+          CONFIG_PACKAGE_nginx-mod-luci=y
           CONFIG_PACKAGE_shadow-useradd=y
           CONFIG_PACKAGE_shadow-groupadd=y
           CONFIG_PACKAGE_spawn-fcgi=y
