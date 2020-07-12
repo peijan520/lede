@@ -161,9 +161,9 @@ jobs:
           CONFIG_PACKAGE_luci-app-wol is not set
           # CONFIG_PACKAGE_luci-app-wol is not set
           CONFIG_PACKAGE_luci-app-hd-idle=y
-          # CONFIG_PACKAGE_luci-app-docker=y
+          # CONFIG_PACKAGE_luci-app-docker is not set
           CONFIG_PACKAGE_luci-app-dockerman=y
-          # CONFIG_PACKAGE_luci-app-kodexplorer=y
+          # CONFIG_PACKAGE_luci-app-kodexplorer is not set
           CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_obfs=y
